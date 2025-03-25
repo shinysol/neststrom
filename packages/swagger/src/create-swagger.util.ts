@@ -12,7 +12,19 @@ import { CreateSwaggerOptions } from "./create-swagger.type";
 /**
  * CreateSwagger
  * @description
- * Usage: createSwagger(app, options)
+ * - Basic usage
+ * ```ts
+ * const doc: CreateSwaggerDocument = {
+    title: 'auth',
+    description: 'auth swagger',
+    url: '/api/docs',
+    version: '1.0.0',
+  };
+  const options: CreateSwaggerOptions = {
+    documents: [doc],
+  };
+  createSwagger(app, options);
+ * ```
  */
 function createSwagger(
   app: INestApplication,
