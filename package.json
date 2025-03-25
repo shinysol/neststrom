@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "publish:core": "npm version patch --workspace=@neststrom/core && npm publish --workspace=@neststrom/core",
+    "publish:swagger": "npm version patch --workspace=@neststrom/swagger && npm publish --workspace=@neststrom/swagger"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.2.1"
+  },
+  "author": "Renny H. Park",
+  "license": "MIT"
+}
